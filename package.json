@@ -4,13 +4,16 @@
   "description": "Static testing tools in Javascript",
   "scripts": {
     "build": "babel src --out-dir dist",
-    "lint": "eslint --ignore-path .gitignore ."
+    "lint": "eslint --ignore-path .gitignore .",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json)\""
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.7",
     "@babel/preset-env": "^7.8.7",
-    "eslint": "6.8.0"
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "prettier": "^1.19.1"
   },
   "keywords": [],
   "author": "Rafael Moreno",
